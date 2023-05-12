@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+        font-family: Outfit;
+      }
+
+      body {
+        background-color: hsl(212, 45%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vmin;
+      }
+
+      .qrCodeComponent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        width: 20rem;
+        height: 30.5rem;
+        padding: 15px;
+        border-radius: 15px;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 0px 0px 50px -30px hsl(218, 44%, 22%);
+      }
+
+      .qrCode {
+        border-radius: 5px;
+      }
+
+      .textComponents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 15px;
+        padding-bottom: 35px;
+        padding: 13px;
+      }
+
+      .qrCodeComponentTitle {
+        color: hsl(218, 44%, 22%);
+        font-weight: 700;
+        font-size: 22px;
+      }
+
+      .qrCodeComponentParagraph {
+        color: hsl(220, 15%, 55%);
+        font-size: 15px;
+      }
+    </style>
+
+    <title>QR code component</title>
+  </head>
+  <body>
+    <div class="qrCodeComponent">
+      <img class="qrCode" src="images/image-qr-code.png" alt="QRCode" />
+      <div class="textComponents">
+        <h1 class="qrCodeComponentTitle">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="qrCodeComponentParagraph">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
